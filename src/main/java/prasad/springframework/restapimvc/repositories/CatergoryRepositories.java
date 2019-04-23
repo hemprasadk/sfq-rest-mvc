@@ -5,5 +5,5 @@ import prasad.springframework.restapimvc.domain.Category;
 
 public interface CatergoryRepositories extends JpaRepository<Category,Long> {
 
-
+Category findByName(String name);
 }

@@ -18,7 +18,7 @@ public class CategoryMapperTest {
     public void CategorytoCategoryDTO() throws Exception
     {
     Category category = Category.builder().name(NAME).id(1L).build();
-    CategoryDTO categoryDTO = categoryMapper.categorytocategoryDTO(category);
+    CategoryDTO categoryDTO = categoryMapper.categoryToCategoryDTO(category);
 
     assertEquals(Long.valueOf(ID),categoryDTO.getId());
     assertEquals(NAME,categoryDTO.getName());

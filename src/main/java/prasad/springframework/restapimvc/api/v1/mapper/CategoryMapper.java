@@ -9,5 +9,5 @@ import prasad.springframework.restapimvc.domain.Category;
 public interface CategoryMapper {
 
     CategoryMapper INSTANCE = Mappers.getMapper(CategoryMapper.class);
-    CategoryDTO categorytocategoryDTO(Category category);
+    CategoryDTO categoryToCategoryDTO(Category category);
 }
